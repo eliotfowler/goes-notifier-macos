@@ -4,7 +4,7 @@ require 'date'
 require 'httparty'
 require 'terminal-notifier'
 
-BASE_URL = "https://ttp.cbp.dhs.gov/schedulerapi/slots?orderBy=soonest&limit=3&locationId=%s&minimum=1"
+BASE_URL = "https://ttp.cbp.dhs.gov/schedulerapi/slots?orderBy=soonest&limit=1&locationId=%s&minimum=1"
 
 def notify_earlier_appt(date)
   TerminalNotifier.notify(
